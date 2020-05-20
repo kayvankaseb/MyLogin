@@ -52,7 +52,7 @@ public class MyLoginViewModel extends ViewModel {
                     errorEmail.setValue(null);
                 }
 
-                if (!user.isPasswordLengthGreaterThan5())
+                if (!user.isPasswordLength())
                     errorPassword.setValue("The minimum Password Length must be greater than 6!");
                 else {
                     errorPassword.setValue(null);
