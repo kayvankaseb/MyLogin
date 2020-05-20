@@ -36,7 +36,7 @@ public class User {
 
 
     boolean isPasswordLengthGreaterThan5() {
-        return getPassword().length() > 5;
+        return getPassword().length() > 6;
     }
 
 }
