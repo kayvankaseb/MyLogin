@@ -31,11 +31,11 @@
                     android:id="@+id/inEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:autofillHints="username"
                     android:hint="@string/email"
                     android:inputType="textEmailAddress"
-                    android:padding="8dp"
-                    android:text="@={loginViewModel.email}"
-                    android:autofillHints="username" />
+                    android:padding="9dp"
+                    android:text="@={loginViewModel.email}" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -49,11 +49,11 @@
                     android:id="@+id/inPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:autofillHints="password"
                     android:hint="@string/password"
                     android:inputType="textPassword"
-                    android:padding="8dp"
-                    android:text="@={loginViewModel.password}"
-                    android:autofillHints="password" />
+                    android:padding="9dp"
+                    android:text="@={loginViewModel.password}" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -62,7 +62,7 @@
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="9dp"
                 android:onClick="@{()-> loginViewModel.onLoginClicked()}"
                 android:text="@string/login" />
 
@@ -73,7 +73,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="9dp"
                 android:visibility="@{loginViewModel.busy}" />
 
 
