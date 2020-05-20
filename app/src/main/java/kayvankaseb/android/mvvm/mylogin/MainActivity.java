@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        LoginViewModel loginViewModel = ViewModelProviders.of(this).get(LoginViewModel.class);
-        binding.setLoginViewModel(loginViewModel);
+        MyLoginViewModel myLoginViewModel = ViewModelProviders.of(this).get(MyLoginViewModel.class);
+        binding.setLoginViewModel(myLoginViewModel);
         binding.setLifecycleOwner(this);
 
 
-        loginViewModel.getUser().observe(this, new Observer<User>() {
+        myLoginViewModel.getUser().observe(this, new Observer<User>() {
             @Override
             public void onChanged(@Nullable User user) {
                 assert user != null;

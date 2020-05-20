@@ -6,7 +6,7 @@ import android.arch.lifecycle.ViewModel;
 import android.os.Handler;
 
 
-public class LoginViewModel extends ViewModel {
+public class MyLoginViewModel extends ViewModel {
 
 
     public MutableLiveData<String> errorPassword = new MutableLiveData<>();
